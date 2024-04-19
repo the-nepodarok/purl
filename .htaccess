@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^([\w\d]{7})$ decode.php?token=$1 [L]

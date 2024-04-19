@@ -1,0 +1,293 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    color: violet;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+main {
+    margin: 5% auto auto;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+a {
+    text-decoration: none;
+    color: salmon;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+}
+
+label {
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    column-gap: 5px;
+}
+
+label > input {
+    width: 250px;
+    height: 40px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: #000000;
+    outline: 1px solid darkslateblue;
+}
+
+input:focus {
+    outline: 2px dotted #ee82ee;
+}
+
+button {
+    padding: 10px;
+    background-color: violet;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 100ms;
+}
+
+button:hover {
+    filter: brightness(90%) contrast(120%);
+    transform: rotate(2deg);
+    transition-duration: 100ms;
+}
+
+.submit-button {
+    position: absolute;
+    right: -100px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead th {
+    font-weight: bold;
+}
+
+td, th {
+    padding: 5px;
+    border-bottom: 1px solid salmon;
+    text-align: center;
+}
+
+td:nth-child(2) {
+    width: 50%;
+    height: 50px;
+    text-overflow: ellipsis;
+}
+
+td > a {
+    color: darkblue;
+}
+
+td:hover > a {
+    color: violet;
+}
+
+td > a:visited {
+    color: salmon;
+}
+
+td > a:active {
+    color: darkslateblue;
+}
+
+th {
+    font-weight: normal;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.nav-bar {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button {
+    font-weight: bold;
+    text-shadow: 0 0 0 rgba(238, 130, 238, 0.5), 0 0 1px rgba(250, 128, 114, 0.5), 0 0 1px rgba(0, 0, 139, 0.5);
+    color: transparent;
+    transition-duration: 200ms;
+}
+
+.login-button:hover {
+    text-shadow: 0 0 0 violet, -14px 14px 2px rgba(250, 128, 114, 0.5), 14px -14px 2px rgba(0, 0, 139, 0.5);
+    text-decoration: 1px underline black;
+    rotate: -2deg;
+    translate: 0 -2px;
+    transition-duration: 200ms;
+}
+
+.logo {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.logo:nth-child(2) {
+    left: auto;
+    right: 5%;
+}
+
+.user-email {
+    text-align: center;
+}
+
+.user-email_email {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.logout {
+    width: 40px;
+    height: 40px;
+    background: url("/src/logoutsvg.svg") no-repeat 100% 50%;
+    background-size: contain;
+    transform: skew(-12deg);
+}
+
+.logout:hover {
+    outline: 2px solid salmon;
+    translate: 1px 4px;
+}
+
+.logout:active {
+    transform: scaleX(-1);
+}
+
+.auth-form {
+    position: relative;
+    margin: 0;
+}
+
+.auth-form label {
+    width: 400px;
+    justify-content: space-between;
+}
+
+.close-button {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    width: 30px;
+    height: 30px;
+    background: salmon url("/src/close.svg") no-repeat 50%;
+    background-size: 25px;
+}
+
+.close-button:active {
+    outline: 2px dotted darkslateblue;
+}
+
+.modal {
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    width: 500px;
+    min-height: 235px;
+    padding: 10px 5px;
+    background-color: aliceblue;
+    border: 2px solid gray;
+    border-radius: 2px;
+}
+
+.hidden-section {
+    display: none;
+}
+
+.result_wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.result_link {
+    width: 500px;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.input-error {
+    color: ghostwhite;
+    text-shadow: 2px 2px 2px violet;
+    outline: 2px solid red;
+}
+
+#short_url.success {
+    background-color: rgba(144, 238, 144, 0.5);
+    outline: none;
+}
+
+.input-password:placeholder-shown {
+    color: ghostwhite;
+    text-shadow: 2px 2px 2px violet, 0 0 ghostwhite;
+    opacity: 1;
+}
+
+.clipboard-button {
+    width: 40px;
+    height: 95%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url("/src/clipboard.svg") 0 no-repeat;
+    background-size: contain;
+    background-position-x: 0;
+    transition-duration: 0s;
+}
+
+.clipboard-button.ok {
+    background-image: url("/src/ok.svg");
+}
+
+.clipboard-button:hover {
+    transform: rotate(-2deg);
+}
+
+.clipboard-button:active {
+    rotate: 360deg;
+    transition-duration: 200ms;
+}
+
+#short_url:has( + .clipboard-button.ok) {
+    outline: 2px solid lightgreen;
+}
+
+input[disabled],
+input[disabled] + button {
+    filter: grayscale(50%);
+    opacity: 0.5;
+}
