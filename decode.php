@@ -1,8 +1,8 @@
 <?php
 
-use classes\UrlHandler;
+use Purl\UrlHandler;
 
-require_once 'classes/UrlHandler.php';
+require_once 'vendor/autoload.php';
 
 $token = $_GET['token'];
 

@@ -1,9 +1,6 @@
 <?php
 
-namespace classes;
-
-require_once 'DBConnection.php';
-require_once 'HasConnection.php';
+namespace Purl;
 
 /**
  * Класс для работы с записями в таблице URL-адресов

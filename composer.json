@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Purl\\": "classes/"
+    }
+  },
+  "require": {
+    "ext-pdo": "*"
+  }
+}

@@ -1,8 +1,9 @@
 <?php
 session_start();
-use classes\UrlShortener;
 
-require_once '../classes/UrlShortener.php';
+use Purl\UrlShortener;
+
+require_once '../vendor/autoload.php';
 
 if ($_POST) {
     header('Content-Type: application/json; charset=utf-8');
