@@ -1,6 +1,6 @@
 <?php
 
-namespace classes;
+namespace Purl;
 
 abstract class HasConnection
 {

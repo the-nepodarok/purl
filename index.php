@@ -1,14 +1,14 @@
 <?php
 session_start();
 
-require_once 'classes/UrlHandler.php';
+require_once 'vendor/autoload.php';
 
 // получение данных пользователя, если он есть
 $user = $_SESSION['user'] ?? null;
 
 if ($user) {
     // получение всех ссылок польз-ля
-    $urls = \classes\UrlHandler::findAllByUser($user['id']);
+    $urls = \Purl\UrlHandler::findAllByUser($user['id']);
 }
 ?>
 

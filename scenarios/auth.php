@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-use classes\UserAuth;
+use Purl\UserAuth;
 
-require_once '..\classes\UserAuth.php';
+require_once '../vendor/autoload.php';
 
 if ($_POST) {
     try {

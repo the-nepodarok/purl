@@ -1,10 +1,8 @@
 <?php
 
-namespace classes;
+namespace Purl;
 
-require_once 'DBConnection.php';
-require_once 'HasConnection.php';
-require_once 'UrlHandler.php';
+use Purl\HasConnection;
 
 /**
  * Класс, занимающийся записью и укорачиванием ссылок

@@ -1,12 +1,8 @@
 <?php
 
-namespace classes;
+namespace Purl;
 
 use PDO;
-
-require_once 'DBConnection.php';
-require_once 'UrlHandler.php';
-require_once 'HasConnection.php';
 
 /**
  * Класс для работы с пользователями и их данными
